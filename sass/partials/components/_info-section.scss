@@ -1,0 +1,22 @@
+.textoinf {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    div {
+        text-align: center;
+        max-width: 1040px;
+        padding: 26px;
+        background-color: $tertiary-color;
+        border: solid $border-color 4px;
+        border-radius: 8%;
+        margin-block: 18px;
+    }
+}
+#next {
+    transition: $normal;
+    color: $flow;
+    text-decoration: underline;
+    &:hover {
+        color: $warning-flow;
+    }
+}

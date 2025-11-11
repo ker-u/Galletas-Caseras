@@ -1,0 +1,32 @@
+.productos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    img {
+        max-width: 100%;
+        max-height: 232px;
+        border-radius: 22%;
+        place-self: center;
+    }
+    div {
+        transition: $fast;
+        width: 280px;
+        height: 420px;
+        padding: 12px;
+        background-color: $tertiary-color;
+        border: solid $border-color 2px;
+        border-radius: 6%;
+        margin: 8px;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        &:hover {
+            outline: solid $border-color 2px;
+            transform: translateY(-2px);
+        }
+    }
+    p {
+        font-size: $xxs;
+        text-align: center;
+        padding-top: 4px;
+    }
+}
